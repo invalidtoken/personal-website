@@ -3,6 +3,8 @@ const Home = () => (
   <div>
     <Basic>Cool Styles</Basic>
     <Basic>Cool Styles</Basic>
+    <Basic>Cool Styles</Basic>
+    <Basic>Cool Styles</Basic>
     <Combined>
       With <code>:hover</code>.
     </Combined>
