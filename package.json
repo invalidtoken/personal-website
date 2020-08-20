@@ -1,5 +1,5 @@
 {
-  "name": "with-emotion-10",
+  "name": "sahil-kapoor-personal-website",
   "homepage": "https://github.com/invalidtoken/personal-website",
   "version": "1.0.0",
   "description": "",
@@ -7,9 +7,13 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "prestart": "npm run build",
     "start": "next start",
-    "build-static": "next build && next export",
-    "predeploy": "yarn run build-static",
+    "preexport": "npm run build",
+    "export": "next export",
+    "preserve": "npm run export",
+    "serve": "serve out",
+    "predeploy": "npm run export",
     "deploy": "gh-pages -d out"
   },
   "keywords": [],
@@ -24,5 +28,8 @@
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "serve": "^11.3.2"
   }
 }
